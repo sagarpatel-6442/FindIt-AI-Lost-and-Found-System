@@ -1,0 +1,9 @@
+@echo off
+cd /d "%~dp0.."
+echo Running PHP syntax checks...
+for /r %%F in (*.php) do php -l "%%F" >nul || exit /b 1
+echo Running PHP structure smoke test...
+php tests\php\smoke_test.php || exit /b 1
+echo Running Python matcher test...
+python tests\python\test_matcher.py || py tests\python\test_matcher.py
+pause
