@@ -1,0 +1,2 @@
+<div class="section-title"><div><h1>Notifications</h1><p class="muted">Updates about reports and claims.</p></div></div>
+<?php if (!$notifications): ?><div class="card empty">No notifications.</div><?php else: ?><div class="grid-2"><?php foreach ($notifications as $n): ?><article class="card"><p><?= h($n['message']) ?></p><div class="meta"><span><?= h($n['created_at']) ?></span></div><?php if ($n['link']): ?><p><a href="<?= h(url($n['link'])) ?>">Open related page</a></p><?php endif; ?></article><?php endforeach; ?></div><?php endif; ?>

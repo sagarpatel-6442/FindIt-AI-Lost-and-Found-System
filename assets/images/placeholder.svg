@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="No item image">
+<rect width="800" height="520" fill="#eef1f5"/>
+<path d="M240 360l110-120 75 78 55-55 90 97H240z" fill="#c8d0dd"/>
+<circle cx="520" cy="175" r="42" fill="#c8d0dd"/>
+<text x="400" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#667085">No image uploaded</text>
+</svg>
